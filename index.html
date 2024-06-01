@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun Said</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #ff4081;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .balloons {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+        }
+        .balloon {
+            position: absolute;
+            bottom: -100px;
+            width: 50px;
+            height: 70px;
+            background-color: #ff4081;
+            border-radius: 50% 50% 50% 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+        .balloon:nth-child(2) {
+            left: 20%;
+            background-color: #3f51b5;
+            animation-delay: 2s;
+        }
+        .balloon:nth-child(3) {
+            left: 40%;
+            background-color: #4caf50;
+            animation-delay: 4s;
+        }
+        .balloon:nth-child(4) {
+            left: 60%;
+            background-color: #ffeb3b;
+            animation-delay: 1s;
+        }
+        .balloon:nth-child(5) {
+            left: 80%;
+            background-color: #ff5722;
+            animation-delay: 3s;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-200px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Ulang Tahun Said!</h1>
+        <p>Semoga semua keinginanmu menjadi kenyataan dan tahun ini dipenuhi dengan kebahagiaan!</p>
+    </div>
+    <div class="balloons">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+    </div>
+</body>
+</html>
